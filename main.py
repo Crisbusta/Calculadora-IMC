@@ -75,30 +75,23 @@ def calculateAge(birthDate):
 if __name__ == "__main__":
     print('--------------------------------------------------------------------------------')
     name = input('Ingresa tu nombre\n')
+    # Valida que el nombre sea correcto
     name = checkName(name)
-    #print(name)
+
     sex = input('Ingresa tu sexo\n1. Femenino - F\n2. Masculino - M\n')
+    # Valida que el sexo sea correcto
     sex = checkSex(sex)
+
     birthDate = input('Fecha de nacimiento? i.e AAAA/MM/DD\n')
     dateInt = dateToInt(birthDate)
     age = calculateAge(date(dateInt[0], dateInt[1], dateInt[2]))
+
     personType = input('¿Eres un atleta? Responder Si o No\n')
+    # Valida que el tipo de persona sea correcto
     personType = checkPersonType(personType)
+
     rut = input('Ingresa tu rut\n')
+    # Valida que el rut exista
     rut = validarRut(rut)
-
-
-
-
-
-
-    #Estandar('A', archivo, 'Hoja1', regexSKU)
-    #checkState('B', archivo, 'Hoja1')
-    #Estandar('C', archivo, 'Hoja1', regexName)
-    #print(validos)
-    #checkSku('A', archivo, 'Hoja1')
-    #checkState('B', archivo, 'Hoja1')
-    #checkName('C', archivo, 'Hoja1')
-    #print(validos)
-    #diccionario(archivo, 'Hoja1')
+    
     print('--------------------------------------------------------------------------------')
